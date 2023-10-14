@@ -1,0 +1,159 @@
+.current{
+  background-color: #FDFFF3;
+  padding:1rem;
+  border: solid 1px #1163AF;
+  width: 80%;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin: 3rem auto;
+  display: flex;
+  font-size:15px;
+  font-weight:bold;
+}
+
+.current2{
+  background-color: #FDFFF3;
+  padding:1rem;
+  border: solid 1px #1163AF;
+  width: 80%;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin: 3rem auto;
+  display: flex;
+  font-size:40px;
+  font-weight:bold;
+}
+
+
+.current:hover{
+  opacity:6;
+}
+
+.current_button{
+  display: flex;
+  margin: 0 auto;
+}
+.current_text{
+  color: #2E78BA;
+  margin: auto;
+  vertical-align: middle;
+}
+.arrow{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 10px 37px;
+  border-bottom: 4px solid rgb(22, 124, 201);
+  border-right: 4px solid rgb(22, 124, 201);
+
+  margin-left: 10px;
+  transform: translate(70px,0px)rotate(45deg);
+}
+
+.calendar_img{
+  width: 90px;
+}
+/* カレンダー */
+body{
+  background-color: #f2f0f0;
+}
+
+.mb-5{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+    .container {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin-top: 80px;
+      background-color: white;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    th {
+      height: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.8em;
+    }
+
+    td {
+      height: 100px;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .today {
+      background: orange !important;
+    }
+
+    th:nth-of-type(1),
+    td:nth-of-type(1) {
+      color: red;
+    }
+
+    th:nth-of-type(7),
+    td:nth-of-type(7) {
+      color: blue;
+    }
+/* 登録フォーム */
+.reservation{
+  width: 74%;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.reservation_title{
+  font-size: 2.5rem;
+  font-family: 'Noto Sans JP';
+  text-align: center;
+  color: #548be9;
+}
+.reservation_text{
+  font-size: 2rem;
+  font-family: 'Noto Sans JP';
+  margin: 1rem 0;
+}
+.reservation_box{
+  all:unset;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  height: 60px;
+  margin-bottom: 15px;
+  font-size: 2.2em;
+}
+.button_container{
+  margin:1.5rem 0 ;
+  text-align: center;
+}
+.back{
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.submit_button{
+  all: unset;
+  background-color: #7EB9F0;
+  color: #FFF;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 2.5em;
+  padding: 8px 0;
+}
+.reset_button{
+  all: unset;
+  background-color: #7EB9F0;
+  color: #FFF;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 2.5em;
+  padding: 8px 0;
+}

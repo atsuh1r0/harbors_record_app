@@ -1,0 +1,372 @@
+/* common */  
+/* button */
+
+/* html,body{
+  overflow: hidden
+} */
+
+body{
+  background-color: #F2F0F0;
+}
+main{
+  height: 80vh;
+}
+.section_button_wrapper {
+  background-color: #C6E9FD;
+  padding-top: 3rem;
+}
+.section_button_in{
+  text-align: center;
+  background:linear-gradient(90deg,#2f87eb,white) ;
+  padding:3.6rem 1rem;
+  width:80%;
+  margin: 0 auto;
+  border-radius: 1.1rem;
+  box-shadow: 3px 3px 0px 2px rgba(23, 23, 23, 0.4);
+}
+
+.section_button_out{
+  text-align: center;
+  background:linear-gradient(90deg,white,#2f87eb) ;
+  padding:3.6rem 1rem;
+  width:80%;
+  margin: 0 auto;
+  border-radius: 1.1rem;
+  box-shadow: 3px 3px 0px 2px rgba(23, 23, 23, 0.4);
+}
+
+.enter_button{
+  background-color: white;
+  color: #1163AF;
+  border: 0;
+  outline: none;
+  padding:0.5rem;
+  width: 80%;
+  vertical-align: middle;
+  border-radius: 3rem;
+  font-size:40px;
+  font-weight:bold;
+  text-align: center;
+  box-shadow: 3px 3px 0px 2px rgba(23, 23, 23, 0.4);
+}
+
+
+.enter_button2{
+  background-color: white;
+  color: #1163AF;
+  border: 0;
+  outline: none;
+  padding:0.5rem;
+  width: 80%;
+  vertical-align: middle;
+  border-radius: 3rem;
+  font-size:30px;
+  font-weight:bold;
+  text-align: center;
+  box-shadow: 3px 3px 0px 2px rgba(23, 23, 23, 0.4);
+}
+
+
+.change_button{
+  background-color: white;
+  color: #1163AF;
+  border: 0;
+  outline: none;
+  padding:15px;
+  width: 50%;
+  vertical-align: middle;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size:15px;
+  font-weight:bold;
+  text-align: center;
+  box-shadow: 3px 3px 0px 2px rgba(23, 23, 23, 0.4);
+}
+
+.arrow_position{
+  position: relative;
+}
+
+.arrow_right{
+  position: absolute;
+  width:30px;
+  height:22px;
+  top:33%;
+  left:68%;
+}
+
+.arrow_left{
+  position: absolute;
+  width:30px;
+  height:22px;
+  top:30%;
+  left:24%;
+  transform:rotate(180deg);
+}
+
+/* .arrow_right::after{
+
+} */
+
+
+.current_wrapper {
+  background-color: #C6E9FD;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.current{
+  background-color: #FDFFF3;
+  padding:1rem;
+  border: solid 1px #1163AF;
+  width: 80%;
+  vertical-align: middle;
+  margin: 0 auto;
+  display: flex;
+  font-size:15px;
+  font-weight:bold;
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+.current:hover{
+  opacity:6;
+}
+
+.current_button{
+  display: flex;
+  gap: 5px;
+}
+.current_text{
+  color: #2E78BA;
+  margin: auto;
+  vertical-align: middle;
+}
+.arrow{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 10px 37px;
+  border-bottom: 4px solid rgb(22, 124, 201);
+  border-right: 4px solid rgb(22, 124, 201);
+  margin-left: 10px;
+  transform: translate(100px,0px)rotate(45deg);
+}
+
+.arrow2{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 10px -17px;
+  border-bottom: 4px solid rgb(22, 124, 201);
+  border-right: 4px solid rgb(22, 124, 201);
+  margin-left: 10px;
+  transform: translate(36px,0px)rotate(45deg);
+}
+
+.color{
+  color: rgb(255, 140, 0);
+  font-size: 1.2em;
+}
+
+/* image */
+.eye_img{
+  width: 40px;
+}
+/* header */
+.header {
+  background-color:  #6AA5EA;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+}
+
+/* ヘッダー内のロゴのスタイル */
+.header img {
+  width: 60px;
+  height: auto;
+}
+
+/* メディアクエリを使用して、画面幅に応じたスタイルを設定 */
+@media screen and (max-width: 414px) {
+  .header {
+    padding: 5px; /* 小さなスクリーンサイズ用の余白調整 */
+  }
+}
+
+
+/* main */
+
+/* ユーザー一覧 */
+.user{
+  display: flex;
+  max-width: 760px;
+  gap:80px;
+  margin: auto;
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.user_container{
+  display: none;
+}
+
+.user_container.appear{
+  display: block;
+  animation: slide-down 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-down{
+  0%{
+    opacity:0;
+    transform:translateY(-90deg);
+  }
+  50%{
+    transform:translateY(-20deg);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0deg);
+  }
+}
+
+.user_left{
+  width:15%;
+}
+
+.user_right{
+  width: 85%;
+}
+
+.user_right_top{
+  border-bottom:solid rgb(174, 173, 173) 1px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+}
+
+
+.grade{
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.name{
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.border{
+  /* padding-left: 10px; */
+  font-weight: bold;
+  font-size: 1.7em;
+  border: solid 1px black;
+  border-radius: 50%;
+}
+
+
+.user_left img{
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  border:solid black;
+}
+
+.user_right_bottom{
+  display: flex;
+  gap:20px;
+}
+
+.user_right_bottom_left p{
+  color: rgb(79, 81, 82);
+  font-size: 1.3em;
+}
+
+.p{
+  margin-bottom: 10px;
+}
+
+.p2{
+  background-color: rgb(229, 229, 229);
+  padding: 7px;
+  border-radius: 19px;
+}
+
+.time{
+  margin-bottom: 7px;
+}
+
+.status{
+  background-color: rgb(88, 185, 234);
+  border-radius: 5px;
+  padding: 8px;
+}
+.作業中{
+  background-color: rgb(88, 185, 234);
+  border-radius: 5px;
+  padding: 8px;
+}
+.外出中{
+  background-color: #F4F0C7;
+  border-radius: 5px;
+  padding: 8px;
+}
+.フリー{
+  background-color: #FFD493;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width: 428px) {
+  /*ここにスマホ用のCSSを記述する*/
+
+  .border{
+    padding: 0 2px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .grade{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .name{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .user{
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .user_right_bottom_left p{
+    color: rgb(79, 81, 82);
+    font-size: 1em;
+  }
+
+  .current{
+    margin-top: 50px;
+  }
+  .arrow_right {
+    top:35%;
+  }
+  .enter_button{
+    margin:10px 0;
+  }
+
+  .section_button_wrapper{
+    padding-bottom: 40px;
+  }
+}
+/* footer */

@@ -1,0 +1,222 @@
+/* サインアップ画面 */
+html {
+    height: 100%;
+    margin: 0;
+  }
+body {
+    background: #59d1de; /* fallback for old browsers */
+    background: rgb(116, 212, 236);
+    background: linear-gradient(90deg, rgb(116, 212, 236) 0%, rgb(63, 175, 209) 50%);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+  }
+  .enroll_container{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    max-width: 320px;
+    margin: auto;
+    /* margin-top: 100px; */
+    padding: 1em 2em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+    align-items: center;
+  }
+  
+  .enroll_container2{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 450px;
+    margin: auto;
+    /* margin-top: 100px; */
+    padding: 1em 2em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+    align-items: center;
+  }
+
+  .enroll_container4{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 450px;
+    margin: auto;
+    /* margin-top: 100px; */
+    padding: 1em 2em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background-color: #FFF;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+    align-items: center;
+  }
+
+  .a{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    width: 100%;
+  }
+
+
+  .control{
+    margin: 20px;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+  }
+  .error{
+    text-align: center;
+    font-size: 12px;
+  }
+
+
+  .login_container{
+    margin:auto;
+    padding: 2em 3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    align-items: center;
+    text-align: center;
+    max-width: 360px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .login_container3 a{
+    text-decoration: none;
+  }
+
+  .login_container2{
+    margin:auto;
+    padding: 2em 3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  .login_container3{
+    margin:auto;
+    padding: 2em 3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+
+  .login_title{
+    font-size: 30px;
+    color: #2D79BA;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+  }
+
+  .login_title2{
+    font-size: 21px;
+    color: #2D79BA;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+  }
+  
+  .login_mail{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login_password{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px
+  }
+  
+  .login_button{
+    display: flex;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    background-color: #7EB9F0;
+    color: #FFF;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .form_control{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .form_label{
+    margin: 0px 30px;
+  }
+  .title{
+    color:black;
+  }
+
+
+  /* レスポンシブ */
+@media screen and (max-width: 428px) {
+    /*ここにスマホ用のCSSを記述する*/
+.control{
+    margin: 0;
+}
+
+.enroll_container2{
+    width: 360px;
+}
+.enroll_container4{
+    width: 360px;
+}
+
+.login_container{
+    width: 360px;
+}
+
+.login_container3{
+    width: 360px;
+}
+    
+  }
